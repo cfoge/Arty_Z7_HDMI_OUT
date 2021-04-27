@@ -1,0 +1,312 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 20 16:57:36 2021
+# Process ID: 23904
+# Current directory: C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1260 C:\Users\robdj\Documents\DVI_PASSTHROUGH_CAPS\HDMI_OUT_SIMPLE_TEST\hdmi_out_simple\hdmi_out_simple.xpr
+# Log file: C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/vivado.log
+# Journal file: C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.xpr
+update_compile_order -fileset sources_1
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_1"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+close_hw_manager
+close_design
+open_run synth_1 -name synth_1
+close_design
+open_run impl_1
+open_run synth_1 -name synth_1
+delete_debug_core [get_debug_cores {u_ila_0 u_ila_1 }]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+current_design synth_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+create_debug_core u_ila_1 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
+connect_debug_port u_ila_0/clk [get_nets [list clk_TMDS ]]
+connect_debug_port u_ila_1/clk [get_nets [list clk125_25/inst/clk_out1 ]]
+set_property port_width 1 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list pixclk ]]
+set_property port_width 1 [get_debug_ports u_ila_1/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list hSync0 ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe1]
+connect_debug_port u_ila_1/probe1 [get_nets [list vSync0 ]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_sysmon  [get_hw_sysmons localhost:3121/xilinx_tcf/Digilent/003017A6FBEDA/xc7z020_1/SYSMON]
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121 -allow_non_jtag
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/003017A6FBEDA]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/003017A6FBEDA]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+current_design synth_1
+delete_debug_core [get_debug_cores {u_ila_0 u_ila_1 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+create_debug_core u_ila_1 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
+connect_debug_port u_ila_0/clk [get_nets [list clk125_25/inst/clk_out1 ]]
+connect_debug_port u_ila_1/clk [get_nets [list clk_TMDS ]]
+set_property port_width 1 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list hSync0 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list vSync0 ]]
+set_property port_width 1 [get_debug_ports u_ila_1/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list pixclk ]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+delete_debug_core [get_debug_cores {u_ila_0 u_ila_1 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+create_debug_core u_ila_1 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
+connect_debug_port u_ila_0/clk [get_nets [list clk125_25/inst/clk_out1 ]]
+connect_debug_port u_ila_1/clk [get_nets [list clk_TMDS ]]
+set_property port_width 1 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list hSync0 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list vSync0 ]]
+set_property port_width 1 [get_debug_ports u_ila_1/probe0]
+set_property PROBE_TYPE DATA [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list pixclk ]]
+set_property mark_debug true [get_nets [list pixclk]]
+set_property mark_debug true [get_nets [list hSync0]]
+set_property mark_debug true [get_nets [list vSync0]]
+set_property port_width 2 [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list vSync0 ]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_1"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+current_design impl_1
+refresh_design

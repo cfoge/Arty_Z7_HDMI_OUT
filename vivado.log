@@ -1,0 +1,364 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 20 19:12:37 2021
+# Process ID: 21932
+# Current directory: C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28364 C:\Users\robdj\Documents\DVI_PASSTHROUGH_CAPS\HDMI_OUT_SIMPLE_TEST\hdmi_out_simple\hdmi_out_simple.xpr
+# Log file: C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/vivado.log
+# Journal file: C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/robdj/Documents/RMIT_2021/CAP_STONE/DIGILENT_LIB/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:14 . Memory (MB): peak = 1118.914 ; gain = 0.000
+update_compile_order -fileset sources_1
+file mkdir C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/sim_1/new/HDMI_test_TB.v w ]
+add_files -fileset sim_1 C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/sim_1/new/HDMI_test_TB.v
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Apr 20 19:18:10 2021] Launched synth_1...
+Run output will be captured here: C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clk125_25'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1323.414 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk125_25/inst'
+Finished Parsing XDC File [c:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk125_25/inst'
+Parsing XDC File [c:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk125_25/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [c:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk125_25/inst'
+Parsing XDC File [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw2'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led3'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn0'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn1'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn2'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_cec'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_clk_n'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_clk_p'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_d_n[0]'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_d_p[0]'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_d_n[1]'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_d_p[1]'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_d_n[2]'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_d_p[2]'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_hpd'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_scl'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_sda'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_cec'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_hpdn'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_scl'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_sda'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2005.133 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  OBUFDS => OBUFDS: 4 instances
+
+open_run: Time (s): cpu = 00:00:29 ; elapsed = 00:00:23 . Memory (MB): peak = 2044.457 ; gain = 925.543
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+create_debug_core u_ila_1 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
+connect_debug_port u_ila_0/clk [get_nets [list clk125_25/inst/clkfbout_buf_clk_wiz_0 ]]
+connect_debug_port u_ila_1/clk [get_nets [list clk125_25/inst/clk_out1 ]]
+set_property port_width 1 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list sw1_IBUF ]]
+set_property port_width 1 [get_debug_ports u_ila_1/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list vSync0 ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe1]
+connect_debug_port u_ila_1/probe1 [get_nets [list hSync0 ]]
+save_constraints
+delete_debug_core [get_debug_cores {u_ila_0 u_ila_1 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+create_debug_core u_ila_1 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
+connect_debug_port u_ila_0/clk [get_nets [list clk125_25/inst/clk_out1 ]]
+connect_debug_port u_ila_1/clk [get_nets [list clk125_25/inst/clkfbout_buf_clk_wiz_0 ]]
+set_property port_width 1 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list hSync0 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list vSync0 ]]
+set_property port_width 1 [get_debug_ports u_ila_1/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list sw1_IBUF ]]
+set_property mark_debug true [get_nets [list hSync0]]
+set_property mark_debug false [get_nets [list hSync0]]
+save_constraints
+launch_runs impl_1 -jobs 4
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.161 . Memory (MB): peak = 2096.738 ; gain = 7.336
+[Tue Apr 20 19:23:45 2021] Launched impl_1...
+Run output will be captured here: C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/runme.log
+reset_run impl_1
+delete_debug_core [get_debug_cores {u_ila_0 u_ila_1 }]
+save_constraints
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Apr 20 19:30:05 2021] Launched synth_1...
+Run output will be captured here: C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/synth_1/runme.log
+refresh_design
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clk125_25'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2134.273 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk125_25/inst'
+Finished Parsing XDC File [c:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk125_25/inst'
+Parsing XDC File [c:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk125_25/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [c:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk125_25/inst'
+Parsing XDC File [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw2'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led3'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn0'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn1'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn2'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_cec'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_clk_n'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_clk_p'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_d_n[0]'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_d_p[0]'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_d_n[1]'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_d_p[1]'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_d_n[2]'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_d_p[2]'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_hpd'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_scl'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_rx_sda'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_cec'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_hpdn'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_scl'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tx_sda'. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/constrs_1/imports/digilent-xdc-master/Arty-Z7-20-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 2134.273 ; gain = 9.367
+launch_runs impl_1 -jobs 4
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 2255.020 ; gain = 0.000
+[Tue Apr 20 19:34:35 2021] Launched impl_1...
+Run output will be captured here: C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/runme.log
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2263.527 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 2263.527 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.104 . Memory (MB): peak = 2263.527 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2263.527 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 2263.527 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Apr 20 19:37:17 2021] Launched impl_1...
+Run output will be captured here: C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 04 2020-08:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 2351.043 ; gain = 14.727
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A6FBEDA
+open_hw_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 3873.426 ; gain = 1522.383
+set_property PROGRAM.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/003017A6FBEDA
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 21 10:02:17 2021...

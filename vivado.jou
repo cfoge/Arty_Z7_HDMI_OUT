@@ -1,0 +1,112 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 20 19:12:37 2021
+# Process ID: 21932
+# Current directory: C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28364 C:\Users\robdj\Documents\DVI_PASSTHROUGH_CAPS\HDMI_OUT_SIMPLE_TEST\hdmi_out_simple\hdmi_out_simple.xpr
+# Log file: C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/vivado.log
+# Journal file: C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.xpr
+update_compile_order -fileset sources_1
+file mkdir C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/sim_1/new/HDMI_test_TB.v w ]
+add_files -fileset sim_1 C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/sim_1/new/HDMI_test_TB.v
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+create_debug_core u_ila_1 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
+connect_debug_port u_ila_0/clk [get_nets [list clk125_25/inst/clkfbout_buf_clk_wiz_0 ]]
+connect_debug_port u_ila_1/clk [get_nets [list clk125_25/inst/clk_out1 ]]
+set_property port_width 1 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list sw1_IBUF ]]
+set_property port_width 1 [get_debug_ports u_ila_1/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list vSync0 ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe1]
+connect_debug_port u_ila_1/probe1 [get_nets [list hSync0 ]]
+save_constraints
+delete_debug_core [get_debug_cores {u_ila_0 u_ila_1 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+create_debug_core u_ila_1 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
+connect_debug_port u_ila_0/clk [get_nets [list clk125_25/inst/clk_out1 ]]
+connect_debug_port u_ila_1/clk [get_nets [list clk125_25/inst/clkfbout_buf_clk_wiz_0 ]]
+set_property port_width 1 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list hSync0 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list vSync0 ]]
+set_property port_width 1 [get_debug_ports u_ila_1/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list sw1_IBUF ]]
+set_property mark_debug true [get_nets [list hSync0]]
+set_property mark_debug false [get_nets [list hSync0]]
+save_constraints
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+delete_debug_core [get_debug_cores {u_ila_0 u_ila_1 }]
+save_constraints
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+refresh_design
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.runs/impl_1/HDMI_test.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]

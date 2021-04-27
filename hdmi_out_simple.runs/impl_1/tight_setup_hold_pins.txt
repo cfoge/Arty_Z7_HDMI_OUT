@@ -1,0 +1,34 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                  TMDS_shift_blue_reg[3]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                 TMDS_shift_green_reg[8]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                 TMDS_shift_green_reg[7]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                  TMDS_shift_blue_reg[2]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                  TMDS_shift_blue_reg[4]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                 TMDS_shift_green_reg[2]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                 TMDS_shift_green_reg[5]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                   TMDS_shift_red_reg[0]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                  TMDS_shift_blue_reg[1]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                   TMDS_shift_red_reg[3]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                   TMDS_shift_red_reg[1]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                   TMDS_shift_red_reg[2]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                 TMDS_shift_green_reg[4]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                  TMDS_shift_blue_reg[5]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                 TMDS_shift_green_reg[0]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                  TMDS_shift_blue_reg[0]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                 TMDS_shift_green_reg[3]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                  TMDS_shift_blue_reg[6]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                 TMDS_shift_green_reg[1]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                   TMDS_shift_red_reg[4]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                   TMDS_shift_red_reg[7]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                 TMDS_shift_green_reg[6]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                  TMDS_shift_blue_reg[8]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                  TMDS_shift_blue_reg[7]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                   TMDS_shift_red_reg[6]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                   TMDS_shift_red_reg[5]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                 TMDS_shift_green_reg[9]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                   TMDS_shift_red_reg[8]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                  TMDS_shift_blue_reg[9]/D|
+|       clk_out1_clk_wiz_0 |       clk_out2_clk_wiz_0 |                                                                                   TMDS_shift_red_reg[9]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
