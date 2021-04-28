@@ -1,0 +1,4 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance HDMI_test_TB.uut.clk125_25.inst.plle2_adv_inst are not same.
+Warning: [Unisim PLLE2_ADV-21] Input CLKIN1 is stopped at time             40039750. Reset is required when input clock returns. Instance HDMI_test_TB.uut.clk125_25.inst.plle2_adv_inst 

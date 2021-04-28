@@ -6,11 +6,13 @@ module HDMI_test(
 	output [2:0] TMDSp, TMDSn,
 	output TMDSp_clock, TMDSn_clock,
 	output led0, ja_1, ja_2, ja_3, ja_4
+
 );
 
 ////////////////////////////////////////////////////////////////////////
-reg [10:0] CounterX, CounterY;
-reg hSync, vSync, DrawArea;
+reg [10:0] CounterX = 11'b00000000000; //define inital content for simulation to work
+reg [10:0] CounterY = 11'b00000000000; //define inital content for simulation to work
+reg hSync = 1'b0, vSync = 1'b0, DrawArea = 1'b0;
 wire pixclk;
 always @(posedge pixclk) DrawArea <= (CounterX<800) && (CounterY<600);
 
@@ -68,6 +70,9 @@ assign led0 = pixclk;
 assign ja_1 = pixclk;
 assign ja_2 = hSync;
 assign ja_3 = vSync;
+
+
+
 
 endmodule
 
