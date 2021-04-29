@@ -4,6 +4,19 @@ Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b363249a16
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-5021] port 'sw1' is not connected on this instance [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/sim_1/new/HDMI_test_TB.v:37]
+WARNING: [VRFC 10-5021] port 'sw1' is not connected on this instance [C:/Users/robdj/Documents/DVI_PASSTHROUGH_CAPS/HDMI_OUT_SIMPLE_TEST/hdmi_out_simple/hdmi_out_simple.srcs/sim_1/new/HDMI_test_TB.v:38]
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TMDS_encoder
+Compiling module unisims_ver.OBUFDS
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=48,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.HDMI_test
+Compiling module xil_defaultlib.HDMI_test_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot HDMI_test_TB_behav

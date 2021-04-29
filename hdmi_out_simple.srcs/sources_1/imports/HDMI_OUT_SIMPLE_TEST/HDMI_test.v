@@ -5,7 +5,11 @@ module HDMI_test(
 	input sys_clk, sw1,  // 40MHz SVGA
 	output [2:0] TMDSp, TMDSn,
 	output TMDSp_clock, TMDSn_clock,
-	output led0, ja_1, ja_2, ja_3, ja_4
+	output led0, ja_1, ja_2, ja_3, ja_4,
+	
+	///Simulation outputs
+	output pixclk_s,hSync_s, vSync_s,
+	output [7:0] r_s, g_s, b_s
 
 );
 
@@ -67,10 +71,12 @@ OBUFDS OBUFDS_clock(.I(pixclk), .O(TMDSp_clock), .OB(TMDSn_clock));
 );
 
 assign led0 = pixclk;
-assign ja_1 = pixclk;
-assign ja_2 = hSync;
-assign ja_3 = vSync;
-
+assign pixclk_s = pixclk;
+assign hSync_s = hSync;
+assign vSync_s = vSync;
+assign r_s = red;
+assign g_s = green;
+assign b_s = blue;
 
 
 
